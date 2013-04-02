@@ -175,7 +175,7 @@
                                  tmp-file-path))
                  (git-show/make-tmp-dir)
                  (call-process-shell-command show-cmd)
-                 (find-file tmp-file-path)
+                 (find-file-read-only tmp-file-path)
                  (setq mode-line-format
                        '(" " mode-line-buffer-identification " "
                          (:eval (propertize
